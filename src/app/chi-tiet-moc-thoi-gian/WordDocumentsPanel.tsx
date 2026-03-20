@@ -27,28 +27,25 @@ export function WordDocumentsPanel({
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    let isMounted = true;
-
-    async function loadDocuments() {
-      try {
-        const response = await fetch("/api/documents", { cache: "no-store" });
-        if (!response.ok) return;
-
-        const data = (await response.json()) as { items?: DocItem[] };
-        if (isMounted && Array.isArray(data.items) && data.items.length > 0) {
-          setDocs(data.items);
-        }
-      } catch {
-        // Keep the default list if API is temporarily unavailable.
-      }
-    }
-
-    loadDocuments();
-
     return () => {
-      isMounted = false;
+      // Revoke blob URLs created during this session to avoid memory leaks.
+      docs.forEach((doc) => {
+        if (doc.href?.startsWith("blob:")) {
+          URL.revokeObjectURL(doc.href);
+        }
+      });
     };
-  }, []);
+  }, [docs]);
+
+  function formatBytes(bytes: number) {
+    if (bytes >= 1024 * 1024) {
+      return `${(bytes / (1024 * 1024)).toFixed(1)} MB • DOCX`;
+    }
+    if (bytes >= 1024) {
+      return `${Math.round(bytes / 1024)} KB • DOCX`;
+    }
+    return `${bytes} B • DOCX`;
+  }
 
   async function onFileChange(event: React.ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0];
@@ -65,20 +62,14 @@ export function WordDocumentsPanel({
     setIsUploading(true);
 
     try {
-      const formData = new FormData();
-      formData.append("file", file);
+      const extension = file.name.toLowerCase().endsWith(".doc") ? "DOC" : "DOCX";
+      const newItem: DocItem = {
+        title: file.name,
+        size: formatBytes(file.size).replace("DOCX", extension),
+        href: URL.createObjectURL(file),
+      };
 
-      const response = await fetch("/api/documents", {
-        method: "POST",
-        body: formData,
-      });
-
-      const data = (await response.json()) as { item?: DocItem; error?: string };
-      if (!response.ok || !data.item) {
-        setErrorMessage(data.error ?? "Tải file thất bại");
-      } else {
-        setDocs((prev) => [data.item!, ...prev]);
-      }
+      setDocs((prev) => [newItem, ...prev]);
     } catch {
       setErrorMessage("Không thể tải file lên lúc này");
     } finally {
