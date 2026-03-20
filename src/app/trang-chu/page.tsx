@@ -70,16 +70,16 @@ export default function GioiThieuNhomPage() {
 
             <div className="mt-[16px] flex gap-[16px] items-start">
               <a
-                href="#"
+                href={`${basePath}/chi-tiet-du-an`}
                 className="bg-[#1b6d24] text-white rounded-full px-[32px] py-[16px] font-bold"
               >
                 Bắt đầu ngay
               </a>
               <a
-                href="#"
+                href={`${basePath}/doi-ngu`}
                 className="bg-[#fed7ca] text-[#795c51] rounded-full px-[32px] py-[16px] font-bold"
               >
-                Xem dự án
+                Thông tin nhóm
               </a>
             </div>
           </div>
