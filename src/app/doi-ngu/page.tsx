@@ -13,15 +13,15 @@ const basePath =
     : "";
 
 const imgPhuongLinh =
-  `${basePath}/Trần Thị Phương Linh.jpg`;
+  `${basePath}/tran-thi-phuong-linh.jpg`;
 const imgTuanVu =
-  `${basePath}/Nguyễn Tuấn Vũ.jpg`;
+  `${basePath}/nguyen-tuan-vu.jpg`;
 const imgThuyTien =
-  `${basePath}/Nguyễn Trần Thủy Tiên.jpg`;
+  `${basePath}/nguyen-tran-thuy-tien.jpg`;
 const imgThanhTien =
-  `${basePath}/Lê Thị Thanh Tiền.jpg`;
+  `${basePath}/le-thi-thanh-tien.jpg`;
 const imgThuyTrang =
-  `${basePath}/Đoàn Thị Thuỳ Trang.jpg`;
+  `${basePath}/doan-thi-thuy-trang.jpg`;
 
 const members = [
   {

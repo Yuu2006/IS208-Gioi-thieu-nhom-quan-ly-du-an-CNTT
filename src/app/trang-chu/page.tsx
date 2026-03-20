@@ -18,15 +18,15 @@ const imgFreshVegetableHarvest =
   "https://www.figma.com/api/mcp/asset/dd0980f4-5d9c-497e-b0d6-24a6abd87ac1";
 
 const imgPhuongLinh =
-  `${basePath}/Trần Thị Phương Linh.jpg`;
+  `${basePath}/tran-thi-phuong-linh.jpg`;
 const imgTuanVu =
-  `${basePath}/Nguyễn Tuấn Vũ.jpg`;
+  `${basePath}/nguyen-tuan-vu.jpg`;
 const imgThuyTien =
-  `${basePath}/Nguyễn Trần Thủy Tiên.jpg`;
+  `${basePath}/nguyen-tran-thuy-tien.jpg`;
 const imgThanhTien =
-  `${basePath}/Lê Thị Thanh Tiền.jpg`;
+  `${basePath}/le-thi-thanh-tien.jpg`;
 const imgThuyTrang =
-  `${basePath}/Đoàn Thị Thuỳ Trang.jpg`;
+  `${basePath}/doan-thi-thuy-trang.jpg`;
 const imgAdvisor =
   "https://www.figma.com/api/mcp/asset/0333b2a9-2fb3-4bd7-b4bf-6cc1ab810681";
 

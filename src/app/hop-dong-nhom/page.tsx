@@ -15,7 +15,7 @@ const basePath =
   process.env.NODE_ENV === "production"
     ? "/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT"
     : "";
-const teamAgreementPdf = `${basePath}/IS208.Q21.pdf`;
+const teamAgreementPdf = `${basePath}/is208-q21.pdf`;
 
 export default function HopDongNhomPage() {
   return (
@@ -44,7 +44,7 @@ export default function HopDongNhomPage() {
               <div className="flex items-center justify-end px-[32px] py-[16px] bg-[#e3e3de]">
                 <a
                   href={teamAgreementPdf}
-                  download="IS208.Q21.pdf"
+                  download="is208-q21.pdf"
                   className="bg-[#1b6d24] rounded-full px-[24px] py-[10px] flex items-center gap-[8px]"
                 >
                   <img alt="" src={imgContainer5} className="w-[12px] h-[12px] object-contain" />
