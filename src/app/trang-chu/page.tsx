@@ -7,28 +7,33 @@ const notoSerifExtraBold = Noto_Serif({
   weight: ["800"],
 });
 
+const basePath =
+  process.env.NODE_ENV === "production"
+    ? "/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT"
+    : "";
+
 const imgSeedlingsGrowing =
   "https://www.figma.com/api/mcp/asset/2d81b39a-a55e-426c-b81d-17096c78af89";
 const imgFreshVegetableHarvest =
   "https://www.figma.com/api/mcp/asset/dd0980f4-5d9c-497e-b0d6-24a6abd87ac1";
 
 const imgPhuongLinh =
-  "/Trần Thị Phương Linh.jpg";
+  `${basePath}/Trần Thị Phương Linh.jpg`;
 const imgTuanVu =
-  "/Nguyễn Tuấn Vũ.jpg";
+  `${basePath}/Nguyễn Tuấn Vũ.jpg`;
 const imgThuyTien =
-  "/Nguyễn Trần Thủy Tiên.jpg";
+  `${basePath}/Nguyễn Trần Thủy Tiên.jpg`;
 const imgThanhTien =
-  "/Lê Thị Thanh Tiền.jpg";
+  `${basePath}/Lê Thị Thanh Tiền.jpg`;
 const imgThuyTrang =
-  "/Đoàn Thị Thuỳ Trang.jpg";
+  `${basePath}/Đoàn Thị Thuỳ Trang.jpg`;
 const imgAdvisor =
   "https://www.figma.com/api/mcp/asset/0333b2a9-2fb3-4bd7-b4bf-6cc1ab810681";
 
 // Icons trong section "Giá trị cốt lõi"
-const imgContainer = "/icons/innovation.png";
-const imgContainer1 = "/icons/integrity.png";
-const imgContainer2 = "/icons/leaf.png";
+const imgContainer = `${basePath}/icons/innovation.png`;
+const imgContainer1 = `${basePath}/icons/integrity.png`;
+const imgContainer2 = `${basePath}/icons/leaf.png`;
 
 export default function GioiThieuNhomPage() {
   return (

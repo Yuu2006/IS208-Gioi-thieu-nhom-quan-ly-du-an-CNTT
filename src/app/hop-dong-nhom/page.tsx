@@ -11,7 +11,11 @@ const imgContainer7 =
   "https://www.figma.com/api/mcp/asset/e0ae3d15-4fdc-4850-a848-1ab775f6e54b";
 const imgButton =
   "https://www.figma.com/api/mcp/asset/e94514e6-cf46-46fa-b637-7af64b2b2cdd";
-const teamAgreementPdf = "/IS208.Q21.pdf";
+const basePath =
+  process.env.NODE_ENV === "production"
+    ? "/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT"
+    : "";
+const teamAgreementPdf = `${basePath}/IS208.Q21.pdf`;
 
 export default function HopDongNhomPage() {
   return (

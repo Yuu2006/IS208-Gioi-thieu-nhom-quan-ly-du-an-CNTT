@@ -7,16 +7,21 @@ const notoSerifExtraBold = Noto_Serif({
   weight: ["800"],
 });
 
+const basePath =
+  process.env.NODE_ENV === "production"
+    ? "/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT"
+    : "";
+
 const imgPhuongLinh =
-  "/Trần Thị Phương Linh.jpg";
+  `${basePath}/Trần Thị Phương Linh.jpg`;
 const imgTuanVu =
-  "/Nguyễn Tuấn Vũ.jpg";
+  `${basePath}/Nguyễn Tuấn Vũ.jpg`;
 const imgThuyTien =
-  "/Nguyễn Trần Thủy Tiên.jpg";
+  `${basePath}/Nguyễn Trần Thủy Tiên.jpg`;
 const imgThanhTien =
-  "/Lê Thị Thanh Tiền.jpg";
+  `${basePath}/Lê Thị Thanh Tiền.jpg`;
 const imgThuyTrang =
-  "/Đoàn Thị Thuỳ Trang.jpg";
+  `${basePath}/Đoàn Thị Thuỳ Trang.jpg`;
 
 const members = [
   {
