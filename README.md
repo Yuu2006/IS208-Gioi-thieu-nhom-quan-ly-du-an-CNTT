@@ -6,6 +6,8 @@
 * **Đề tài:** Hệ thống quản lý chuỗi cung ứng thực phẩm sạch
 * **Repository:** [IS208 - Quản lý dự án CNTT](https://github.com/Yuu2006/IS208-Quan-ly-du-an-CNTT)
 * **Mô tả:** 
+
+
 ## CÔNG NGHỆ VÀ CÔNG CỤ SỬ DỤNG
 
 
