@@ -11,4 +11,4 @@
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/le-thi-thanh-tien.jpg","image"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/doan-thi-thuy-trang.jpg","image"]
 :HL["https://www.figma.com/api/mcp/asset/bb1b7be5-b877-4ea5-b49d-e55d17e1e71d","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"doi-ngu","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"Yw__EY6cYgd7YOe-wurw2"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"doi-ngu","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"UJvgS5lnWiLFAO2i0YshZ"}
