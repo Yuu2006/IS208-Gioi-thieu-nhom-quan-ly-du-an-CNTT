@@ -11,132 +11,77 @@ const imgIconFacebook =
 
 export function TrumFooter() {
   return (
-    <footer className="bg-[#0a142f] h-[440px] overflow-clip relative shrink-0 w-full">
-      <div className="-translate-x-1/2 absolute contents left-[calc(50%+0.78px)] top-[89px]">
-        <div className="absolute inset-[82.02%_12.08%_13.21%_52.85%]" />
-        <div className="absolute contents inset-[82.23%_79.98%_13.23%_12.2%]">
-          <div className="absolute content-stretch flex gap-[20px] inset-[82.23%_79.98%_13.23%_12.2%] items-center overflow-clip">
-            <div className="relative shrink-0 size-[20px]">
-              <img
-                alt=""
-                className="absolute block max-w-none size-full"
-                src={imgIconTwitter}
-              />
+    <footer className="bg-[#0a142f] text-white w-full">
+      <div className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-16 pt-14 pb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-14 items-start">
+          <div className="space-y-6">
+            <img
+              alt="Logo UIT"
+              className="h-20 w-auto object-contain"
+              src={imgUit1}
+            />
+            <div>
+              <p className="font-bold text-[16px] leading-[1.2] tracking-[0.2px]">
+                TRÙM NÔNG SẢN
+              </p>
+              <p className="mt-4 text-[14px] leading-[1.45] text-white/70 max-w-[290px]">
+                Đội ngũ phát triển tiên phong, nâng cao trải nghiệm của doanh
+                nghiệp và khách hàng
+              </p>
             </div>
-            <div className="relative shrink-0 size-[20px]">
-              <img
-                alt=""
-                className="absolute block max-w-none size-full"
-                src={imgIconLinkedin}
-              />
+          </div>
+
+          <div>
+            <h3 className="font-bold text-[16px] leading-[1.3]">Liên kết nhanh</h3>
+            <div className="mt-6 flex flex-col gap-4 text-[14px] leading-[1.4] text-white/80">
+              <Link href="/trang-chu" className="hover:text-white transition-colors">Trang chủ</Link>
+              <Link href="/doi-ngu" className="hover:text-white transition-colors">Về chúng tôi</Link>
+              <Link href="/chi-tiet-du-an" className="hover:text-white transition-colors">Dự án</Link>
+              <Link href="/timeline" className="hover:text-white transition-colors">Tiến độ</Link>
+              <Link href="/hop-dong-nhom" className="hover:text-white transition-colors">Hợp đồng</Link>
             </div>
-            <div className="relative shrink-0 size-[20px]">
-              <img
-                alt=""
-                className="absolute block max-w-none size-full"
-                src={imgIconFacebook}
-              />
+          </div>
+
+          <div>
+            <h3 className="font-bold text-[16px] leading-[1.3]">Dịch vụ</h3>
+            <ul className="mt-6 space-y-4 text-[14px] leading-[1.4] text-white/80">
+              <li>Phát triển web</li>
+              <li>Phát triển Mobile</li>
+              <li>DevOps</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-bold text-[16px] leading-[1.3]">Liên hệ</h3>
+            <div className="mt-6 space-y-4 text-[14px] leading-[1.4] text-white/80">
+              <p>
+                Email:{" "}
+                <a href="mailto:24520971@gm.uit.edu.vn" className="underline hover:text-white transition-colors">
+                  24520971@gm.uit.edu.vn
+                </a>
+              </p>
+              <p>Phone:</p>
+              <p className="max-w-[340px]">
+                Address: Khu phố 6, phường Linh Trung, Thành phố Thủ Đức,
+                Thành phố HCM
+              </p>
             </div>
           </div>
         </div>
 
-        <div className="absolute bg-white inset-[78.45%_12.71%_21.36%_12.71%] opacity-25" />
-
-        <div className="absolute contents leading-[1.5] left-[530px] text-white top-[89px] whitespace-nowrap">
-          <Link
-            href="/hop-dong-nhom"
-            className="absolute font-['Instrument_Sans:Regular','Noto_Sans:Regular',sans-serif] font-normal left-[530px] opacity-70 text-[14px] top-[297px]"
-          >
-            Hợp đồng
-          </Link>
-          <Link
-            href="/timeline"
-            className="absolute font-['Instrument_Sans:Regular','Noto_Sans:Regular',sans-serif] font-normal left-[530px] opacity-70 text-[14px] top-[256px]"
-          >
-            Tiến độ
-          </Link>
-          <Link
-            href="/gioi-thieu-nhom"
-            className="absolute font-['Instrument_Sans:Regular',sans-serif] font-normal left-[530px] opacity-70 text-[14px] top-[174px]"
-          >
-            Về chúng tôi
-          </Link>
-          <Link
-            href="/chi-tiet-du-an"
-            className="absolute font-['Instrument_Sans:Regular','Noto_Sans:Regular',sans-serif] font-normal left-[530px] opacity-70 text-[14px] top-[215px]"
-          >
-            Dự án
-          </Link>
-          <Link
-            href="/trang-chu"
-            className="absolute font-['Instrument_Sans:Regular','Noto_Sans:Regular',sans-serif] font-normal left-[530px] opacity-70 text-[14px] top-[133px]"
-          >
-            Trang chủ
-          </Link>
-          <p className="absolute font-['Instrument_Sans:Bold',sans-serif] font-bold left-[535px] text-[16px] top-[89px]">
-            Liên kết nhanh
-          </p>
-        </div>
-
-        <div className="absolute content-stretch flex flex-col inset-[20.24%_38.19%_32.72%_54.17%] items-start overflow-clip">
-          <div className="h-[207px] leading-[1.5] relative shrink-0 text-white w-full">
-            <p className="absolute font-['Instrument_Sans:Bold','Noto_Sans:Bold',sans-serif] font-bold h-[21.75px] left-0 text-[16px] top-0 w-[110px]">
-              Dịch vụ
-            </p>
-            <p className="absolute font-['Instrument_Sans:Regular','Noto_Sans:Regular',sans-serif] font-normal h-[21.75px] left-0 opacity-70 text-[14px] top-[41.75px] w-[110px]">
-              Phát triển web
-            </p>
-            <p className="absolute font-['Instrument_Sans:Regular','Noto_Sans:Regular',sans-serif] font-normal h-[21.75px] left-0 opacity-70 text-[14px] top-[83.5px] w-[110px]">
-              Phát triển Mobile
-            </p>
-            <p className="absolute font-['Instrument_Sans:Regular',sans-serif] font-normal h-[21.75px] left-0 opacity-70 text-[14px] top-[125.25px] w-[110px]">
-              DevOps
-            </p>
+        <div className="mt-8 border-t border-white/25 pt-6">
+          <div className="flex items-center gap-5">
+            <img alt="Twitter" className="size-5" src={imgIconTwitter} />
+            <img alt="LinkedIn" className="size-5" src={imgIconLinkedin} />
+            <img alt="Facebook" className="size-5" src={imgIconFacebook} />
           </div>
-        </div>
-
-        <div className="absolute content-stretch flex flex-col inset-[20.23%_10.63%_32.73%_70.42%] items-start overflow-clip">
-          <div className="h-[207px] leading-[1.5] relative shrink-0 text-white w-full">
-            <p className="absolute font-['Instrument_Sans:Bold','Noto_Sans:Bold',sans-serif] font-bold h-[21.75px] left-0 text-[16px] top-0 w-[110px]">
-              Liên hệ
-            </p>
-            <p className="absolute font-['Instrument_Sans:Regular',sans-serif] font-normal h-[21.75px] left-0 opacity-70 text-[14px] top-[42px] w-[220px]">
-              Email: {" "}
-              <a href="mailto:24520971@gm.uit.edu.vn" className="underline">
-                24520971@gm.uit.edu.vn
-              </a>
-            </p>
-            <p className="absolute font-['Instrument_Sans:Regular',sans-serif] font-normal h-[21.75px] left-0 opacity-70 text-[14px] top-[83.5px] w-[110px]">
-              Phone:
-            </p>
-            <p className="absolute font-['Instrument_Sans:Regular','Noto_Sans:Regular',sans-serif] font-normal h-[22px] left-0 opacity-70 text-[14px] top-[125px] w-[256px]">
-              Address: Khu phố 6, phường Linh Trung, Thành phố Thủ Đức, Thành phố HCM
-            </p>
-          </div>
-        </div>
-
-        <div className="absolute h-[80px] left-[182px] top-[89px] w-[348px]">
-          <img
-            alt=""
-            className="absolute inset-0 max-w-none object-cover pointer-events-none size-full"
-            src={imgUit1}
-          />
-        </div>
-
-        <div className="absolute contents leading-[1.5] left-[182px] text-white top-[192px]">
-          <p className="absolute font-['Instrument_Sans:Bold','Noto_Sans:Bold',sans-serif] font-bold h-[31.5px] left-[184px] text-[16px] top-[192px] w-[261px]">
-            TRÙM NÔNG SẢN
-          </p>
-          <p className="absolute font-['Instrument_Sans:Regular','Noto_Sans:Regular',sans-serif] font-normal h-[56.438px] left-[182px] opacity-70 text-[14px] top-[230px] w-[253.209px]">
-            Đội ngũ phát triển tiên phong, nâng cao trải nghiệm của doanh nghiệp và khách hàng
-          </p>
         </div>
       </div>
 
       {/* Link hidden for SEO/crawlers */}
       <div className="sr-only">
         <Link href="/trang-chu">Trang chủ</Link>
-        <Link href="/gioi-thieu-nhom">Về chúng tôi</Link>
+        <Link href="/doi-ngu">Về chúng tôi</Link>
         <Link href="/chi-tiet-du-an">Dự án</Link>
         <Link href="/timeline">Tiến độ</Link>
         <Link href="/hop-dong-nhom">Hợp đồng</Link>
