@@ -39,12 +39,12 @@ export function WordDocumentsPanel({
 
   function formatBytes(bytes: number) {
     if (bytes >= 1024 * 1024) {
-      return `${(bytes / (1024 * 1024)).toFixed(1)} MB • DOCX`;
+      return `${(bytes / (1024 * 1024)).toFixed(1)} MB • PDF`;
     }
     if (bytes >= 1024) {
-      return `${Math.round(bytes / 1024)} KB • DOCX`;
+      return `${Math.round(bytes / 1024)} KB • PDF`;
     }
-    return `${bytes} B • DOCX`;
+    return `${bytes} B • PDF`;
   }
 
   async function onFileChange(event: React.ChangeEvent<HTMLInputElement>) {
@@ -52,8 +52,8 @@ export function WordDocumentsPanel({
     if (!file) return;
 
     const extension = file.name.toLowerCase();
-    if (!extension.endsWith(".doc") && !extension.endsWith(".docx")) {
-      setErrorMessage("Chỉ hỗ trợ file Word (.doc, .docx)");
+    if (!extension.endsWith(".pdf")) {
+      setErrorMessage("Chỉ hỗ trợ file PDF (.pdf)");
       event.target.value = "";
       return;
     }
@@ -62,10 +62,9 @@ export function WordDocumentsPanel({
     setIsUploading(true);
 
     try {
-      const extension = file.name.toLowerCase().endsWith(".doc") ? "DOC" : "DOCX";
       const newItem: DocItem = {
         title: file.name,
-        size: formatBytes(file.size).replace("DOCX", extension),
+        size: formatBytes(file.size),
         href: URL.createObjectURL(file),
       };
 
@@ -82,7 +81,7 @@ export function WordDocumentsPanel({
     <>
       <div className="flex items-center gap-[8px]">
         <img alt="" src={headerIcon} className="w-[16px] h-[16px]" />
-        <div className="font-bold text-[#1a1c19] text-[18px]">Word Documents</div>
+        <div className="font-bold text-[#1a1c19] text-[18px]">PDF Documents</div>
       </div>
 
       <div className="mt-[16px] space-y-[12px]">
@@ -103,7 +102,13 @@ export function WordDocumentsPanel({
               </div>
             </div>
             {d.href ? (
-              <a href={d.href} download className="w-[16px] h-[16px]" aria-label={`Tải ${d.title}`}>
+              <a
+                href={d.href}
+                target="_blank"
+                rel="noreferrer"
+                className="w-[16px] h-[16px]"
+                aria-label={`Mở ${d.title}`}
+              >
                 <img alt="" src={actionIcon} className="w-full h-full object-contain" />
               </a>
             ) : (
@@ -118,7 +123,7 @@ export function WordDocumentsPanel({
       <input
         ref={fileInputRef}
         type="file"
-        accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        accept=".pdf,application/pdf"
         className="hidden"
         onChange={onFileChange}
       />

@@ -1,6 +1,7 @@
 import { TopNavBar } from "../components/TopNavBar";
 import { TrumFooter } from "../components/TrumFooter";
 import { WordDocumentsPanel } from "./WordDocumentsPanel";
+import Link from "next/link";
 
 const imgContainer =
   "https://www.figma.com/api/mcp/asset/3f342655-ad28-4aa5-9d09-2b8b14b8aa9d";
@@ -20,14 +21,26 @@ const imgButton =
 const tasks = [
   { title: "Họp bắt đầu dự án", status: "Hoàn thành", icon: imgMargin },
   { title: "Phân công công việc", status: "Hoàn thành", icon: imgMargin },
-  { title: "Nghiên cứu tài liệu", status: "Đang thực hiện", icon: imgMargin1 },
-  { title: "Xây dựng SOW", status: "Chờ xử lý", icon: imgMargin1 },
+  { title: "Nghiên cứu tài liệu", status: "Hoàn thành", icon: imgMargin },
+  { title: "Xây dựng SOW", status: "Hoàn thành", icon: imgMargin },
 ];
 
 const docs = [
-  { title: "Biên bản họp nhóm", size: "2.4 MB • DOCX" },
-  { title: "Phân công thành viên", size: "1.8 MB • DOCX" },
-  { title: "SOW", size: "4.2 MB • DOCX" },
+  {
+    title: "Project Business Case",
+    size: "337.9 KB • PDF",
+    href: "/docs/Project%20Business%20Case.pdf",
+  },
+  {
+    title: "Project Charter",
+    size: "272.7 KB • PDF",
+    href: "/docs/Project%20Charter.pdf",
+  },
+  {
+    title: "SOW",
+    size: "365.1 KB • PDF",
+    href: "/docs/SOW.pdf",
+  },
 ];
 
 function getStatusStyles(status: string) {
@@ -47,13 +60,13 @@ export default function ChiTietMilestonePage() {
 
       <main className="pt-[72px] pb-[80px] px-[24px]">
         <div className="max-w-[1024px] mx-auto">
-          <a
+          <Link
             href="/timeline"
             className="flex gap-[8px] items-center text-[#1b6d24] font-semibold"
           >
             <img alt="" src={imgContainer} className="w-[16px] h-[16px]" />
-            <span className="text-[16px]">Trở về Danh sách Milestone</span>
-          </a>
+            <span className="text-[16px]">Trở về Timeline</span>
+          </Link>
 
           <div className="mt-[32px] bg-white rounded-[12px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] p-[48px]">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-[48px]">
@@ -76,13 +89,15 @@ export default function ChiTietMilestonePage() {
                 <h2 className="text-[#1b6d24] font-bold text-[18px] mt-[16px]">
                   Mô tả chi tiết
                 </h2>
-                <p className="text-[#3f4a3c] text-[16px] leading-[26px] mt-[8px]">
-                  Giai đoạn này đánh dấu sự bắt đầu chính thức của chu kỳ thu
-                  hoạch Terra Harvest. Chúng ta tập trung vào việc thiết lập
-                  các giao thức hậu cần cốt lõi, xác định phạm vi công việc
-                  và đảm bảo sự liên kết giữa các bộ phận cung ứng và vận
-                  hành.
-                </p>
+                <ul className="text-[#3f4a3c] text-[16px] leading-[26px] mt-[8px] list-disc pl-[24px] space-y-[6px]">
+                  <li>Họp nhóm lần 1.</li>
+                  <li>Phân công công việc.</li>
+                  <li>Nghiên cứu, tham khảo các nguồn tài liệu.</li>
+                  <li>Thảo luận, hình thành các ý tưởng ban đầu cho dự án.</li>
+                  <li>Xây dựng SOW, Project Charter, Project Business Case.</li>
+                  <li>Xây dựng bảng câu hỏi phỏng vấn khảo sát hiện trạng.</li>
+                  <li>Xác định công nghệ, môi trường sẽ sử dụng.</li>
+                </ul>
 
                 <h2 className="text-[#1b6d24] font-bold text-[18px] mt-[24px]">
                   Danh sách công việc
@@ -123,20 +138,20 @@ export default function ChiTietMilestonePage() {
 
                   <div className="mt-[24px] bg-[#1b6d24] rounded-[12px] p-[24px] overflow-hidden">
                     <div className="text-white font-bold tracking-[2.4px] uppercase text-[12px] opacity-80">
-                      Trạng thái milestone
+                      Trạng thái
                     </div>
                     <div className="mt-[24px] h-[8px] bg-white/20 rounded-full">
-                      <div className="h-full bg-[#a3f69c] w-[55%] rounded-full" />
+                      <div className="h-full bg-[#a3f69c] w-full rounded-full" />
                     </div>
                     <div className="mt-[12px] text-white opacity-90 text-[14px] leading-[20px]">
-                      Tiến độ đang bám sát lộ trình thu hoạch mùa xuân...
+                      Tiến độ đã hoàn thành.
                     </div>
                     <div className="mt-[16px] flex items-end justify-between">
                       <div className="text-white font-bold text-[30px] leading-[36px]">
-                        45%
+                        100%
                       </div>
                       <div className="text-white text-[14px] leading-[20px]">
-                        2/4 Công việc
+                        4/4 Công việc
                       </div>
                     </div>
                   </div>
