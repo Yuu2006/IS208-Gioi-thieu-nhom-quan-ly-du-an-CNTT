@@ -1,10 +1,9 @@
-:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/0o27ab1wn83dm.css","style"]
+:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/0m2ka9cw046qc.css","style"]
 :HL["https://www.figma.com/api/mcp/asset/3f342655-ad28-4aa5-9d09-2b8b14b8aa9d","image"]
 :HL["https://www.figma.com/api/mcp/asset/4f3bb7d3-2359-4641-a609-24cb8f229275","image"]
-:HL["https://www.figma.com/api/mcp/asset/67a77836-e7a1-45b6-a5c2-1a67049fd31a","image"]
 :HL["https://www.figma.com/api/mcp/asset/bb1b7be5-b877-4ea5-b49d-e55d17e1e71d","image"]
 :HL["https://www.figma.com/api/mcp/asset/99cdbc46-d183-43e2-80d5-e1fa53633c2e","image"]
 :HL["https://www.figma.com/api/mcp/asset/aac0ce09-8909-476d-ab22-79358e0eeb31","image"]
 :HL["https://www.figma.com/api/mcp/asset/57c5d566-e996-4569-821d-5396dd48dae4","image"]
 :HL["https://www.figma.com/api/mcp/asset/da5e93d1-2f72-47c6-867c-cad259fbdde3","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"chi-tiet-moc-thoi-gian","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"N_Rd_mW65g1han0sW9xPy"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"chi-tiet-moc-thoi-gian","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"DY0Kdpq1wCL78BX9OWYOk"}
