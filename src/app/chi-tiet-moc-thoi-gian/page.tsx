@@ -26,20 +26,30 @@ const tasks = [
 ];
 
 const docs = [
+    {
+    title: "Lab 1 - Phân Công",
+    size: "229.8 KB • PDF",
+      href: "/docs/Lab1/lab-1-phan-cong.pdf",
+  },
   {
     title: "Project Business Case",
     size: "337.9 KB • PDF",
-    href: "/docs/Project%20Business%20Case.pdf",
+      href: "/docs/Lab1/project-business-case.pdf",
   },
   {
     title: "Project Charter",
     size: "272.7 KB • PDF",
-    href: "/docs/Project%20Charter.pdf",
+      href: "/docs/Lab1/project-charter.pdf",
   },
   {
     title: "SOW",
     size: "365.1 KB • PDF",
-    href: "/docs/SOW.pdf",
+      href: "/docs/Lab1/sow.pdf",
+  },
+  {
+    title: "Bảng Câu Hỏi Phỏng Vấn Khảo Sát Hiện Trạng",
+    size: "252.6 KB • PDF",
+      href: "/docs/Lab1/bang-cau-hoi-phong-van-khao-sat-hien-trang.pdf",
   },
 ];
 
@@ -74,11 +84,11 @@ export default function ChiTietMilestonePage() {
                 <div className="flex gap-[12px] items-center">
                   <div className="bg-[#88d982] rounded-full px-[12px] py-[4px]">
                     <div className="font-bold text-[#005312] text-[12px] uppercase tracking-[0.6px]">
-                      Mốc Quan Trọng
+                      Ngày hoàn thành
                     </div>
                   </div>
                   <div className="text-[#3f4a3c] font-medium text-[14px]">
-                    17-03-2025
+                    21-03-2025
                   </div>
                 </div>
 
