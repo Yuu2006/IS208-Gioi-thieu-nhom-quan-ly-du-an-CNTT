@@ -11,4 +11,4 @@
 :HL["https://www.figma.com/api/mcp/asset/57c5d566-e996-4569-821d-5396dd48dae4","image"]
 :HL["https://www.figma.com/api/mcp/asset/9dc316ce-faff-474b-a22d-8794fcdb1a0f","image"]
 :HL["https://www.figma.com/api/mcp/asset/79a58561-ca26-4161-9ce1-68402c635a98","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"chi-tiet-du-an","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"7eQBPwECbXfdbTMiP34fp"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"chi-tiet-du-an","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"AXUn806sLz2UlRLqUZW2P"}

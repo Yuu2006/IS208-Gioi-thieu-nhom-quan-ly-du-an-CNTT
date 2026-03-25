@@ -6,4 +6,4 @@
 :HL["https://www.figma.com/api/mcp/asset/aac0ce09-8909-476d-ab22-79358e0eeb31","image"]
 :HL["https://www.figma.com/api/mcp/asset/57c5d566-e996-4569-821d-5396dd48dae4","image"]
 :HL["https://www.figma.com/api/mcp/asset/da5e93d1-2f72-47c6-867c-cad259fbdde3","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"chi-tiet-moc-thoi-gian","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"7eQBPwECbXfdbTMiP34fp"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"chi-tiet-moc-thoi-gian","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"AXUn806sLz2UlRLqUZW2P"}
