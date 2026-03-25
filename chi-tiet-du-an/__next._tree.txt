@@ -1,4 +1,4 @@
-:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/0m2ka9cw046qc.css","style"]
+:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/0hy.qyl6w95_3.css","style"]
 :HL["https://www.figma.com/api/mcp/asset/f6165292-2787-4c79-8f6f-a98ea7d89cf3","image"]
 :HL["https://www.figma.com/api/mcp/asset/fa823d8c-8f39-480d-bff6-298ee54af280","image"]
 :HL["https://www.figma.com/api/mcp/asset/d3f95ec2-7e9c-4385-91bd-6e63a28a1dff","image"]
@@ -11,4 +11,4 @@
 :HL["https://www.figma.com/api/mcp/asset/57c5d566-e996-4569-821d-5396dd48dae4","image"]
 :HL["https://www.figma.com/api/mcp/asset/9dc316ce-faff-474b-a22d-8794fcdb1a0f","image"]
 :HL["https://www.figma.com/api/mcp/asset/79a58561-ca26-4161-9ce1-68402c635a98","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"chi-tiet-du-an","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"QU2U5xTezGFZkHZjdD84z"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"chi-tiet-du-an","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"7eQBPwECbXfdbTMiP34fp"}

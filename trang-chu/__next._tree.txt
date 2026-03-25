@@ -1,4 +1,4 @@
-:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/0m2ka9cw046qc.css","style"]
+:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/0hy.qyl6w95_3.css","style"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/media/006cd1f38fff2b8b-s.p.003m1.h_ud0_q.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/media/80f765cdfdfc44ca-s.p.04wswl4~p~2kd.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/029zzas5~9x02.css","style"]
@@ -17,4 +17,4 @@
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/le-thi-thanh-tien.jpg","image"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/doan-thi-thuy-trang.jpg","image"]
 :HL["https://www.figma.com/api/mcp/asset/0333b2a9-2fb3-4bd7-b4bf-6cc1ab810681","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"trang-chu","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"QU2U5xTezGFZkHZjdD84z"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"trang-chu","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"7eQBPwECbXfdbTMiP34fp"}
