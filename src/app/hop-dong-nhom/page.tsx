@@ -27,11 +27,8 @@ export default function HopDongNhomPage() {
           <section className="grid grid-cols-1 lg:grid-cols-12 gap-[48px] items-start">
             <div className="lg:col-span-8">
               <h1 className="font-black text-[#1a1c19] text-[48px] leading-[60px]">
-                Hợp đồng Nhóm
+                Hợp đồng nhóm
               </h1>
-              <div className="font-medium text-[#1b6d24] text-[36px] leading-[40px] mt-[4px]">
-                (Team Agreement)
-              </div>
               <p className="mt-[16px] text-[#3f4a3c] text-[18px] leading-[29.25px] max-w-[672px]">
                 Tài liệu này trình bày các điều khoản và điều kiện cho sự hợp tác dự án của chúng tôi. Vui lòng xem xét kỹ thỏa thuận trước khi tiến hành bất kỳ dự án nào.
               </p>
