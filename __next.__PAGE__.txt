@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
 3:I[97367,["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/01xlw8hd842-c.js","/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":["$L2",null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"AXUn806sLz2UlRLqUZW2P"}
+0:{"rsc":["$","$1","c",{"children":["$L2",null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"K49Fn3pi7gLCRWogBIJAB"}
 5:null
 2:E{"digest":"NEXT_REDIRECT;replace;/trang-chu;307;"}
