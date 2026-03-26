@@ -47,6 +47,20 @@ export function WordDocumentsPanel({
     return `${bytes} B • PDF`;
   }
 
+  function getDownloadFileName(doc: DocItem) {
+    if (!doc.href) {
+      return doc.title;
+    }
+
+    if (doc.href.startsWith("blob:")) {
+      return doc.title.toLowerCase().endsWith(".pdf") ? doc.title : `${doc.title}.pdf`;
+    }
+
+    const segments = doc.href.split("/");
+    const lastSegment = segments[segments.length - 1];
+    return lastSegment ? decodeURIComponent(lastSegment) : doc.title;
+  }
+
   async function onFileChange(event: React.ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0];
     if (!file) return;
@@ -104,10 +118,9 @@ export function WordDocumentsPanel({
             {d.href ? (
               <a
                 href={d.href}
-                target="_blank"
-                rel="noreferrer"
+                download={getDownloadFileName(d)}
                 className="w-[16px] h-[16px]"
-                aria-label={`Mở ${d.title}`}
+                aria-label={`Tải xuống ${d.title}`}
               >
                 <img alt="" src={actionIcon} className="w-full h-full object-contain" />
               </a>
