@@ -6,4 +6,4 @@
 :HL["https://www.figma.com/api/mcp/asset/99cdbc46-d183-43e2-80d5-e1fa53633c2e","image"]
 :HL["https://www.figma.com/api/mcp/asset/aac0ce09-8909-476d-ab22-79358e0eeb31","image"]
 :HL["https://www.figma.com/api/mcp/asset/57c5d566-e996-4569-821d-5396dd48dae4","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"hop-dong-nhom","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"K49Fn3pi7gLCRWogBIJAB"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"hop-dong-nhom","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"s_HS2m2JnR7Sv4oRSH9Om"}
