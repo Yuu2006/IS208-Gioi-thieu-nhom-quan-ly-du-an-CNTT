@@ -1,20 +1,12 @@
 import { TopNavBar } from "../components/TopNavBar";
 import { TrumFooter } from "../components/TrumFooter";
 
-const imgStatusIcon =
-  "https://www.figma.com/api/mcp/asset/0368a1c4-c8df-4efa-813b-857cc81c5706";
-const imgContainer5 =
-  "https://www.figma.com/api/mcp/asset/e8ab61c5-767e-4cfc-8683-65e4cb4ae739";
-const imgContainer6 =
-  "https://www.figma.com/api/mcp/asset/8ecd93b5-5345-40e3-8ab4-6b5fe74dbae5";
-const imgContainer7 =
-  "https://www.figma.com/api/mcp/asset/e0ae3d15-4fdc-4850-a848-1ab775f6e54b";
-const imgButton =
-  "https://www.figma.com/api/mcp/asset/e94514e6-cf46-46fa-b637-7af64b2b2cdd";
 const basePath =
   process.env.NODE_ENV === "production"
     ? "/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT"
     : "";
+const imgContainer5 = `${basePath}/icons/download.svg`;
+const imgContainer7 = `${basePath}/icons/mail.svg`;
 const teamAgreementPdf = `${basePath}/is208-q21.pdf`;
 
 export default function HopDongNhomPage() {
@@ -98,7 +90,6 @@ export default function HopDongNhomPage() {
                   <img alt="" src={imgContainer7} className="w-[12px] h-[12px] object-contain" />
                   24520971@gm.uit.edu.vn
                 </div>
-                <img alt="" src={imgButton} className="hidden" />
               </div>
             </div>
           </section>

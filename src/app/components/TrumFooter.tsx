@@ -1,13 +1,13 @@
 import Link from "next/link";
 
-const imgUit1 =
-  "https://www.figma.com/api/mcp/asset/bb1b7be5-b877-4ea5-b49d-e55d17e1e71d";
-const imgIconTwitter =
-  "https://www.figma.com/api/mcp/asset/99cdbc46-d183-43e2-80d5-e1fa53633c2e";
-const imgIconLinkedin =
-  "https://www.figma.com/api/mcp/asset/aac0ce09-8909-476d-ab22-79358e0eeb31";
-const imgIconFacebook =
-  "https://www.figma.com/api/mcp/asset/57c5d566-e996-4569-821d-5396dd48dae4";
+const basePath =
+  process.env.NODE_ENV === "production"
+    ? "/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT"
+    : "";
+const imgUit1 = `${basePath}/icons/uit.png`;
+const imgIconTwitter = `${basePath}/icons/twitter.svg`;
+const imgIconLinkedin = `${basePath}/icons/linkedin.svg`;
+const imgIconFacebook = `${basePath}/icons/facebook.svg`;
 
 export function TrumFooter() {
   return (

@@ -108,7 +108,7 @@ export default function ChiTietLab2Page() {
                     </div>
                   </div>
                   <div className="text-[#3f4a3c] font-medium text-[14px]">
-                    04-04-2026
+                    14-04-2026
                   </div>
                 </div>
 

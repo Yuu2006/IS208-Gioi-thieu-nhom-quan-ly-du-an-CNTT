@@ -13,9 +13,9 @@ const basePath =
     : "";
 
 const imgSeedlingsGrowing =
-  "https://www.figma.com/api/mcp/asset/2d81b39a-a55e-426c-b81d-17096c78af89";
+  "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=299&fit=crop&q=80";
 const imgFreshVegetableHarvest =
-  "https://www.figma.com/api/mcp/asset/dd0980f4-5d9c-497e-b0d6-24a6abd87ac1";
+  "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&h=800&fit=crop&q=80";
 
 const imgPhuongLinh =
   `${basePath}/tran-thi-phuong-linh.jpg`;
@@ -28,7 +28,7 @@ const imgThanhTien =
 const imgThuyTrang =
   `${basePath}/doan-thi-thuy-trang.jpg`;
 const imgAdvisor =
-  "https://www.figma.com/api/mcp/asset/0333b2a9-2fb3-4bd7-b4bf-6cc1ab810681";
+  `${basePath}/icons/tvphuong.jpg`;
 
 // Icons trong section "Giá trị cốt lõi"
 const imgContainer = `${basePath}/icons/innovation.png`;

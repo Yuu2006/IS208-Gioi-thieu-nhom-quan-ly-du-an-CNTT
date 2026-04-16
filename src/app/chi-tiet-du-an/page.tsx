@@ -1,15 +1,19 @@
 import { TopNavBar } from "../components/TopNavBar";
 import { TrumFooter } from "../components/TrumFooter";
 
-// Assets (lấy từ output node 114:216 của Figma)
-const imgContainer = "https://www.figma.com/api/mcp/asset/f6165292-2787-4c79-8f6f-a98ea7d89cf3";
-const imgContainer1 = "https://www.figma.com/api/mcp/asset/fa823d8c-8f39-480d-bff6-298ee54af280";
-const imgContainer2 = "https://www.figma.com/api/mcp/asset/d3f95ec2-7e9c-4385-91bd-6e63a28a1dff";
-const imgBackground = "https://www.figma.com/api/mcp/asset/8796dec4-0975-4090-a25f-d2545f988bde";
-const imgBackground1 = "https://www.figma.com/api/mcp/asset/41dd3ee6-a868-4802-8852-fdef9ec8eb77";
-const imgBackground2 = "https://www.figma.com/api/mcp/asset/747e5437-3f6a-4a16-8a06-b1054b127782";
-const imgIcon = "https://www.figma.com/api/mcp/asset/9dc316ce-faff-474b-a22d-8794fcdb1a0f";
-const imgIcon1 = "https://www.figma.com/api/mcp/asset/79a58561-ca26-4161-9ce1-68402c635a98";
+const basePath =
+  process.env.NODE_ENV === "production"
+    ? "/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT"
+    : "";
+
+const imgContainer = `${basePath}/icons/budget.svg`;
+const imgContainer1 = `${basePath}/icons/calendar.svg`;
+const imgContainer2 = `${basePath}/icons/team.svg`;
+const imgBackground = `${basePath}/icons/data-fragment.svg`;
+const imgBackground1 = `${basePath}/icons/shield-check.svg`;
+const imgBackground2 = `${basePath}/icons/heart.svg`;
+const imgIcon = `${basePath}/icons/qr-code.svg`;
+const imgIcon1 = `${basePath}/icons/clipboard.svg`;
 
 export default function ChiTietDuAnPage() {
   return (

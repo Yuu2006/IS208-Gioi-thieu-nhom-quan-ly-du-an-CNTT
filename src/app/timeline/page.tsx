@@ -12,7 +12,7 @@ const milestones = [
     href: "/chi-tiet-moc-thoi-gian",
   },
   {
-    date: "04-04-2026",
+    date: "14-04-2026",
     title: "Phân tích & Thiết kế",
     desc: "Định hướng dự án - Xác định các công nghệ, môi trường sử dụng.",
     accent: "#8b5cf6",

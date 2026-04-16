@@ -7,9 +7,6 @@ type NavKey =
   | "timeline"
   | "hop-dong";
 
-const imgButton =
-  "https://www.figma.com/api/mcp/asset/685812ba-ce64-4577-9be4-2e84b89f2fc9";
-
 export function TopNavBar({ active }: { active: NavKey }) {
   const navItems: Array<{ key: NavKey; label: string; href: string }> = [
     { key: "gioi-thieu", label: "Trang Chủ", href: "/trang-chu" },
