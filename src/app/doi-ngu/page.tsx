@@ -85,9 +85,7 @@ export default function DoiNguPage() {
             <h1
               className={`${notoSerifExtraBold.className} mt-3.5 font-black text-[#1a1c19] text-[56px] md:text-[72px] lg:text-[84px] leading-[0.95] tracking-[-1.2px]`}
             >
-              Đội ngũ
-              <br />
-              <span className="text-[#1b6d24]">tâm huyết</span>
+              Thành viên
             </h1>
 
             <p className="mt-3.5 text-[#4b5547] text-[18px] md:text-[22px] leading-[1.35] max-w-155">

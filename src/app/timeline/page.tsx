@@ -1,6 +1,12 @@
 import { TopNavBar } from "../components/TopNavBar";
 import { TrumFooter } from "../components/TrumFooter";
+import { Noto_Serif } from "next/font/google";
 import Link from "next/link";
+
+const notoSerifExtraBold = Noto_Serif({
+  subsets: ["latin", "vietnamese"],
+  weight: ["800"],
+});
 
 const milestones = [
   {
@@ -43,7 +49,7 @@ export default function TimelinePage() {
       <main className="pt-[96px] pb-[80px] px-[24px]">
         <div className="max-w-[1024px] mx-auto">
           <section className="max-w-[672px]">
-            <h1 className="font-bold text-[#1a1c19] text-[48px] tracking-[-1.2px]">
+            <h1 className={`${notoSerifExtraBold.className} font-extrabold text-[#1a1c19] text-[64px] leading-[76px] tracking-[-1.8px]`}>
               Lộ trình Dự án
             </h1>
             <p className="mt-[16px] text-[#3f4a3c] text-[18px] leading-[28px]">

@@ -1,5 +1,12 @@
 import { TopNavBar } from "../components/TopNavBar";
 import { TrumFooter } from "../components/TrumFooter";
+import { Noto_Serif } from "next/font/google";
+
+const notoSerifExtraBold = Noto_Serif({
+  subsets: ["latin", "vietnamese"],
+  weight: ["800"],
+});
+
 
 const basePath =
   process.env.NODE_ENV === "production"
@@ -18,7 +25,7 @@ export default function HopDongNhomPage() {
         <div className="max-w-[1536px] mx-auto">
           <section className="grid grid-cols-1 lg:grid-cols-12 gap-[48px] items-start">
             <div className="lg:col-span-8">
-              <h1 className="font-black text-[#1a1c19] text-[48px] leading-[60px]">
+              <h1 className={`${notoSerifExtraBold.className} font-extrabold text-[#1a1c19] text-[64px] leading-[76px] tracking-[-1.8px]`}>
                 Hợp đồng nhóm
               </h1>
               <p className="mt-[16px] text-[#3f4a3c] text-[18px] leading-[29.25px] max-w-[672px]">

@@ -66,13 +66,13 @@ export default function GioiThieuNhomPage() {
             <div className="mt-[16px] flex gap-[16px] items-start">
               <a
                 href={`${basePath}/chi-tiet-du-an`}
-                className="bg-[#1b6d24] text-white rounded-full px-[32px] py-[16px] font-bold"
+                className="bg-[#1b6d24] text-white rounded-full px-[32px] py-[16px] font-bold transition-all duration-200 hover:bg-[#155a1d] hover:scale-105 hover:shadow-lg active:scale-95"
               >
                 Bắt đầu ngay
               </a>
               <a
                 href={`${basePath}/doi-ngu`}
-                className="bg-[#fed7ca] text-[#795c51] rounded-full px-[32px] py-[16px] font-bold"
+                className="bg-[#fed7ca] text-[#795c51] rounded-full px-[32px] py-[16px] font-bold transition-all duration-200 hover:bg-[#fdc4b0] hover:scale-105 hover:shadow-md active:scale-95"
               >
                 Thông tin nhóm
               </a>
@@ -80,22 +80,22 @@ export default function GioiThieuNhomPage() {
           </div>
 
           <div className="flex-1 relative">
-            <div className="absolute -bottom-[38px] -left-[38px] rotate-[-6deg] bg-[#e3e3de] rounded-[24px] p-[16px] w-[256px]">
-              <div className="rounded-[8px] overflow-hidden w-full">
-                <img
-                  alt="Seedlings growing"
-                  src={imgSeedlingsGrowing}
-                  className="w-full h-[299px] object-cover"
-                />
-              </div>
-            </div>
-
             <div className="w-full flex justify-center">
               <div className="rotate-3 aspect-square w-[605px] rounded-[24px] overflow-hidden shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)]">
                 <img
                   alt="Fresh vegetable harvest"
                   src={imgFreshVegetableHarvest}
                   className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="absolute -bottom-[38px] -left-[38px] rotate-[-6deg] bg-[#e3e3de] rounded-[24px] p-[16px] w-[256px] z-10">
+              <div className="rounded-[8px] overflow-hidden w-full">
+                <img
+                  alt="Seedlings growing"
+                  src={imgSeedlingsGrowing}
+                  className="w-full h-[299px] object-cover"
                 />
               </div>
             </div>
@@ -194,11 +194,11 @@ export default function GioiThieuNhomPage() {
               { img: imgThanhTien, name: "Lê Thị Thanh Tiền", role: "Frontend Developer" },
               { img: imgThuyTrang, name: "Đoàn Thị Thùy Trang", role: "Testing (QA/QC)" },
             ].map((m) => (
-              <div key={m.name} className="relative">
-                <div className="bg-[#eeeee9] rounded-[24px] overflow-hidden shadow-[0px_1px_2px_rgba(0,0,0,0.05)]">
-                  <img alt={m.name} src={m.img} className="w-full h-[299px] object-cover" />
+              <div key={m.name} className="relative group cursor-pointer">
+                <div className="bg-[#eeeee9] rounded-[24px] overflow-hidden shadow-[0px_1px_2px_rgba(0,0,0,0.05)] transition-all duration-300 group-hover:shadow-[0px_8px_24px_rgba(0,0,0,0.12)] group-hover:scale-[1.03]">
+                  <img alt={m.name} src={m.img} className="w-full h-[299px] object-cover transition-transform duration-300 group-hover:scale-105" />
                 </div>
-                <div className="mt-[12px] text-center">
+                <div className="mt-[12px] text-center transition-all duration-300 group-hover:translate-y-[-2px]">
                   <div className="font-bold text-[#1a1c19] text-[18px]">{m.name}</div>
                   <div className="mt-[4px] text-[#3f4a3c] text-[14px]">{m.role}</div>
                 </div>

@@ -1,5 +1,11 @@
 import { TopNavBar } from "../components/TopNavBar";
 import { TrumFooter } from "../components/TrumFooter";
+import { Noto_Serif } from "next/font/google";
+
+const notoSerifExtraBold = Noto_Serif({
+  subsets: ["latin", "vietnamese"],
+  weight: ["800"],
+});
 
 const basePath =
   process.env.NODE_ENV === "production"
@@ -30,7 +36,7 @@ export default function ChiTietDuAnPage() {
             </div>
 
             <div className="mt-[24px]">
-              <h1 className="font-bold text-[#1a1c19] text-[60px] leading-[60px]">
+              <h1 className={`${notoSerifExtraBold.className} font-extrabold text-[#1a1c19] text-[64px] leading-[76px] tracking-[-1.8px]`}>
                 HỆ THỐNG QUẢN LÝ CHUỖI
                 <br />
                 CUNG ỨNG THỰC PHẨM
