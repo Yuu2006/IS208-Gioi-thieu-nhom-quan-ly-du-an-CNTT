@@ -1,9 +1,9 @@
-:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/0cjdxme32-ze3.css","style"]
+:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/0rg.50.keh3dy.css","style"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/media/006cd1f38fff2b8b-s.p.003m1.h_ud0_q.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/media/80f765cdfdfc44ca-s.p.04wswl4~p~2kd.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/029zzas5~9x02.css","style"]
-:HL["https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=299&fit=crop&q=80","image"]
 :HL["https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&h=800&fit=crop&q=80","image"]
+:HL["https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=299&fit=crop&q=80","image"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/icons/innovation.png","image"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/icons/uit.png","image"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/icons/twitter.svg","image"]
@@ -15,6 +15,6 @@
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/nguyen-tuan-vu.jpg","image"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/nguyen-tran-thuy-tien.jpg","image"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/le-thi-thanh-tien.jpg","image"]
-:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/doan-thi-thuy-trang.jpg","image"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/icons/tvphuong.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"trang-chu","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"GcX4tcpQZrJ-ZOAjeN1H6"}
+:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/doan-thi-thuy-trang.jpg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"trang-chu","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"Yy_79M_gqv2uExbDla1u9"}

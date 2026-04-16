@@ -1,8 +1,11 @@
-:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/0cjdxme32-ze3.css","style"]
+:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/0rg.50.keh3dy.css","style"]
+:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/media/006cd1f38fff2b8b-s.p.003m1.h_ud0_q.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/media/80f765cdfdfc44ca-s.p.04wswl4~p~2kd.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/029zzas5~9x02.css","style"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/icons/download.svg","image"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/icons/mail.svg","image"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/icons/uit.png","image"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/icons/twitter.svg","image"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/icons/linkedin.svg","image"]
 :HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/icons/facebook.svg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"hop-dong-nhom","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"GcX4tcpQZrJ-ZOAjeN1H6"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"hop-dong-nhom","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"Yy_79M_gqv2uExbDla1u9"}

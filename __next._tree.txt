@@ -1,2 +1,2 @@
-:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/0cjdxme32-ze3.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"GcX4tcpQZrJ-ZOAjeN1H6"}
+:HL["/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT/_next/static/chunks/0rg.50.keh3dy.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"Yy_79M_gqv2uExbDla1u9"}
