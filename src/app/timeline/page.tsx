@@ -2,33 +2,32 @@ import { TopNavBar } from "../components/TopNavBar";
 import { TrumFooter } from "../components/TrumFooter";
 import Link from "next/link";
 
-const imgContainer =
-  "https://www.figma.com/api/mcp/asset/e61ef1b6-6d36-494e-b46a-fb21283187c4";
-
 const milestones = [
   {
-    date: "17-03-2025",
+    date: "17-03-2026",
     title: "Khởi động dự án",
     desc: "Đội ngũ dự án đã được phân công vai trò và trách nhiệm ban đầu.",
     accent: "#8b5cf6",
     side: "right" as const,
+    href: "/chi-tiet-moc-thoi-gian",
   },
   {
-    date: "14-03-2025",
+    date: "04-04-2026",
     title: "Phân tích & Thiết kế",
     desc: "Định hướng dự án - Xác định các công nghệ, môi trường sử dụng.",
     accent: "#8b5cf6",
     side: "left" as const,
+    href: "/chi-tiet-lab2",
   },
   {
-    date: "25-03-2025",
+    date: "",
     title: "Thiết kế phần mềm",
     desc: "Thiết kế hệ thống và hoàn thiện kế hoạch dự án.",
     accent: "#8b5cf6",
     side: "right" as const,
   },
   {
-    date: "01-06-2025",
+    date: "",
     title: "Quản lý dự án",
     desc: "Lập kế hoạch và tổ chức thực hiện dự án hiệu quả.",
     accent: "#8b5cf6",
@@ -58,8 +57,8 @@ export default function TimelinePage() {
             <div className="absolute bg-[#e5e7eb] left-1/2 top-0 bottom-0 w-[2px] -translate-x-1/2" />
 
             <div className="flex flex-col gap-[64px]">
-              {milestones.map((m) => (
-                <div key={m.date} className="relative w-full">
+              {milestones.map((m, idx) => (
+                <div key={`${m.date}-${m.title}-${idx}`} className="relative w-full">
                   {/* dot */}
                   <div className="absolute left-1/2 -translate-x-1/2 top-[40px]">
                     <div className="bg-[#8b5cf6] border-4 border-white rounded-full shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] size-[16px]" />
@@ -82,17 +81,21 @@ export default function TimelinePage() {
                       <p className="mt-[8px] text-[#3f4a3c] text-[14px] leading-[22.75px]">
                         {m.desc}
                       </p>
-                      {m.title === "Khởi động dự án" ? (
+                      {(m as {href?: string}).href ? (
                         <Link
-                          href="/chi-tiet-moc-thoi-gian"
+                          href={(m as {href?: string}).href!}
                           className="mt-[12px] inline-flex gap-[8px] items-center text-[#8b5cf6] text-[12px] font-semibold"
                         >
-                          <img alt="" src={imgContainer} className="w-[10px] h-[12px] object-contain" />
+                          <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 6L1 11" stroke="#8b5cf6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                          </svg>
                           <span>Click to view detail</span>
                         </Link>
                       ) : (
                         <div className="mt-[12px] flex gap-[8px] items-center text-[#8b5cf6] text-[12px] font-semibold">
-                          <img alt="" src={imgContainer} className="w-[10px] h-[12px] object-contain" />
+                          <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 6L1 11" stroke="#8b5cf6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                          </svg>
                           <span>Click to view detail</span>
                         </div>
                       )}

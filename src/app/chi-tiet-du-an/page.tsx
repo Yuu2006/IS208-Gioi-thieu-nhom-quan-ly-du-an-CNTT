@@ -156,13 +156,13 @@ export default function ChiTietDuAnPage() {
                 Audit Logs (Append-only)
               </div>
               <div className="bg-[rgba(250,250,245,0.12)] border border-[rgba(250,250,245,0.18)] rounded-[12px] p-[16px] text-white">
-                Mã ID Lô hàng độc nhất (Unique Batch ID)
+                Mã ID Lô hàng duy nhất
               </div>
               <div className="bg-[rgba(250,250,245,0.12)] border border-[rgba(250,250,245,0.18)] rounded-[12px] p-[16px] text-white">
                 Phương pháp Scrumban (Kanban + Scrum)
               </div>
               <div className="bg-[rgba(250,250,245,0.12)] border border-[rgba(250,250,245,0.18)] rounded-[12px] p-[16px] text-white">
-                QR Traceability
+                QR Truy xuất nguồn gốc
               </div>
             </div>
           </section>

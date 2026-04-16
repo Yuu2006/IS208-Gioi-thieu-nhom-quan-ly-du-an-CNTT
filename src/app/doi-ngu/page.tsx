@@ -33,14 +33,6 @@ const members = [
     expertise: ["Planning", "Leadership", "Communication", "Agile"],
   },
   {
-    name: "Nguyễn Tuấn Vũ",
-    role: "Backend Developer",
-    img: imgTuanVu,
-    desc: "Xây dựng API, thiết kế cơ sở dữ liệu và tối ưu logic để hệ thống ổn định, an toàn.",
-    badges: ["Backend Developer", "System Design", "API"],
-    expertise: ["Node.js", "PostgreSQL", "REST API", "Security"],
-  },
-  {
     name: "Nguyễn Trần Thủy Tiên",
     role: "Business Analyst",
     img: imgThuyTien,
@@ -55,6 +47,14 @@ const members = [
     desc: "Phát triển giao diện trực quan, tối ưu trải nghiệm đa thiết bị và đảm bảo tính nhất quán toàn hệ thống.",
     badges: ["Frontend Developer", "UI/UX", "Accessibility"],
     expertise: ["React", "TypeScript", "Tailwind", "Responsive UI"],
+  },
+  {
+    name: "Nguyễn Tuấn Vũ",
+    role: "Backend Developer",
+    img: imgTuanVu,
+    desc: "Xây dựng API, thiết kế cơ sở dữ liệu và tối ưu logic để hệ thống ổn định, an toàn.",
+    badges: ["Backend Developer", "System Design", "API"],
+    expertise: ["Node.js", "PostgreSQL", "REST API", "Security"],
   },
   {
     name: "Đoàn Thị Thùy Trang",

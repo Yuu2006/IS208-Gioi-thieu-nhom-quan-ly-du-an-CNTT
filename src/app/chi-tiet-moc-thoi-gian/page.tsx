@@ -3,53 +3,52 @@ import { TrumFooter } from "../components/TrumFooter";
 import { WordDocumentsPanel } from "./WordDocumentsPanel";
 import Link from "next/link";
 
-const imgContainer =
-  "https://www.figma.com/api/mcp/asset/3f342655-ad28-4aa5-9d09-2b8b14b8aa9d";
-const imgMargin =
-  "https://www.figma.com/api/mcp/asset/4f3bb7d3-2359-4641-a609-24cb8f229275";
-const imgMargin1 =
-  "https://www.figma.com/api/mcp/asset/67a77836-e7a1-45b6-a5c2-1a67049fd31a";
-const imgContainer1 =
-  "https://www.figma.com/api/mcp/asset/671fc9d8-9e32-4f93-bdad-cb3e16d4b02f";
-const imgContainer2 =
-  "https://www.figma.com/api/mcp/asset/47982da8-273f-498a-9b5e-fafe61657c86";
-const imgContainer3 =
-  "https://www.figma.com/api/mcp/asset/d36f4ab9-b96d-4faf-98f9-290cd4677d1d";
-const imgButton =
-  "https://www.figma.com/api/mcp/asset/da5e93d1-2f72-47c6-867c-cad259fbdde3";
+const basePath =
+  process.env.NODE_ENV === "production"
+    ? "/IS208-Gioi-thieu-nhom-quan-ly-du-an-CNTT"
+    : "";
+
+const imgContainer3 = `${basePath}/icons/download.svg`;
+const imgContainer1 = `${basePath}/icons/folder.svg`;
+const imgContainer2 = `${basePath}/icons/file.svg`;
 
 const tasks = [
-  { title: "Họp bắt đầu dự án", status: "Hoàn thành", icon: imgMargin },
-  { title: "Phân công công việc", status: "Hoàn thành", icon: imgMargin },
-  { title: "Nghiên cứu tài liệu", status: "Hoàn thành", icon: imgMargin },
-  { title: "Xây dựng SOW", status: "Hoàn thành", icon: imgMargin },
+  { title: "Họp bắt đầu dự án", status: "Hoàn thành" },
+  { title: "Phân công công việc", status: "Hoàn thành" },
+  { title: "Nghiên cứu tài liệu", status: "Hoàn thành" },
+  { title: "Xây dựng SOW", status: "Hoàn thành" },
 ];
 
 const docs = [
     {
+    title: "Biên bản họp",
+    size: "137 KB • PDF",
+    href: `${basePath}/docs/Lab1/bien-ban-hop-lan-1.pdf`,
+  },
+  {
     title: "Lab 1 - Phân Công",
     size: "229.8 KB • PDF",
-      href: "/docs/Lab1/lab-1-phan-cong.pdf",
+    href: `${basePath}/docs/Lab1/lab-1-phan-cong.pdf`,
   },
   {
     title: "Project Business Case",
     size: "337.9 KB • PDF",
-      href: "/docs/Lab1/project-business-case.pdf",
+    href: `${basePath}/docs/Lab1/project-business-case.pdf`,
   },
   {
     title: "Project Charter",
     size: "272.7 KB • PDF",
-      href: "/docs/Lab1/project-charter.pdf",
+    href: `${basePath}/docs/Lab1/project-charter.pdf`,
   },
   {
     title: "SOW",
     size: "365.1 KB • PDF",
-      href: "/docs/Lab1/sow.pdf",
+    href: `${basePath}/docs/Lab1/sow.pdf`,
   },
   {
     title: "Bảng Câu Hỏi Phỏng Vấn Khảo Sát Hiện Trạng",
     size: "252.6 KB • PDF",
-      href: "/docs/Lab1/bang-cau-hoi-phong-van-khao-sat-hien-trang.pdf",
+    href: `${basePath}/docs/Lab1/bang-cau-hoi-phong-van-khao-sat-hien-trang.pdf`,
   },
 ];
 
@@ -74,7 +73,9 @@ export default function ChiTietMilestonePage() {
             href="/timeline"
             className="flex gap-[8px] items-center text-[#1b6d24] font-semibold"
           >
-            <img alt="" src={imgContainer} className="w-[16px] h-[16px]" />
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 12L6 8L10 4" stroke="#1B6D24" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
             <span className="text-[16px]">Trở về Timeline</span>
           </Link>
 
@@ -88,7 +89,7 @@ export default function ChiTietMilestonePage() {
                     </div>
                   </div>
                   <div className="text-[#3f4a3c] font-medium text-[14px]">
-                    21-03-2025
+                    21-03-2026
                   </div>
                 </div>
 
@@ -120,7 +121,10 @@ export default function ChiTietMilestonePage() {
                       className="bg-[#eeeee9] rounded-[8px] p-[16px] flex items-center justify-between"
                     >
                       <div className="flex items-center gap-[12px]">
-                        <img alt="" src={t.icon} className="w-[16px] h-[20px] object-contain" />
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="10" cy="10" r="9" stroke="#1B6D24" strokeWidth="1.5"/>
+                          <path d="M6.5 10L9 12.5L13.5 7.5" stroke="#1B6D24" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
                         <div className="font-medium text-[#1a1c19] text-[16px]">
                           {t.title}
                         </div>
@@ -166,13 +170,6 @@ export default function ChiTietMilestonePage() {
                     </div>
                   </div>
                 </div>
-
-                {/* small floating button mimic (không bắt buộc) */}
-                <img
-                  alt=""
-                  src={imgButton}
-                  className="hidden"
-                />
               </div>
             </div>
           </div>

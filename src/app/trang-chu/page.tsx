@@ -50,14 +50,9 @@ export default function GioiThieuNhomPage() {
             </div>
 
             <h1
-              className={`${notoSerifExtraBold.className} font-extrabold text-[#1a1c19] text-[72px] leading-[72px] tracking-[-1.8px]`}
+              className={`${notoSerifExtraBold.className} font-extrabold text-[#1a1c19] text-[64px] leading-[76px] tracking-[-1.8px]`}
             >
-              Kiến tạo hệ sinh
-              <br />
-              thái 
-              <span className="text-[#1b6d24]"> nông</span>
-              <br />
-              <span className="text-[#1b6d24]">nghiệp</span> bền vững{" "}
+              HỆ THỐNG QUẢN LÝ CHUỖI CUNG ỨNG THỰC PHẨM SẠCH
             </h1>
 
             <p className="mt-[8px] text-[#3f4a3c] text-[18px] leading-[28px]">
