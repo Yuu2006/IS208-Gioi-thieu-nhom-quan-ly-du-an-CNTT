@@ -95,7 +95,7 @@ export function WordDocumentsPanel({
     <>
       <div className="flex items-center gap-[8px]">
         <img alt="" src={headerIcon} className="w-[16px] h-[16px]" />
-        <div className="font-bold text-[#1a1c19] text-[18px]">PDF Documents</div>
+        <div className="font-bold text-[#1a1c19] text-[18px]">Documents</div>
       </div>
 
       <div className="mt-[16px] space-y-[12px]">

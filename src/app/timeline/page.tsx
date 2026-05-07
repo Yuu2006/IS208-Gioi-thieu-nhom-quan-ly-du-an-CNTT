@@ -26,11 +26,12 @@ const milestones = [
     href: "/chi-tiet-lab2",
   },
   {
-    date: "",
+    date: "07-05-2026",
     title: "Thiết kế phần mềm",
     desc: "Thiết kế hệ thống và hoàn thiện kế hoạch dự án.",
     accent: "#8b5cf6",
     side: "right" as const,
+    href: "/chi-tiet-lab-3",
   },
   {
     date: "",
@@ -118,4 +119,3 @@ export default function TimelinePage() {
     </div>
   );
 }
-
